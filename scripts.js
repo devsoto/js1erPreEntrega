@@ -20,8 +20,15 @@ do{
 }
 while(op && stock !== 0)
 
-if (!stock){
-    alert("Sin stock")
-}else{
-    alert("Quedan " + stock + " productos en stock")
+
+function get_stock(stockProd){
+    if (!stockProd){
+        return "Sin stock"
+    }else{
+        return "Quedan " + stockProd + " productos en stock"
+    }
 }
+
+alert(get_stock(stock))
+
+
